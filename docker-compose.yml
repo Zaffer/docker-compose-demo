@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+
+  app:
+    # restart: always
+    ports:
+      - "8080:8080"
+    env_file:
+        - ./.env
+    build:
+        context: ./src
+        dockerfile: app.dockerfile
+        args:
+            INSTALL_DEV: ${INSTALL_DEV-false}
+    # command: /start.sh

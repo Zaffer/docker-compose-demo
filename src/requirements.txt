@@ -1,0 +1,10 @@
+# production dependencies
+fastapi==0.66.1
+uvicorn==0.14.0
+pydantic==1.8.2
+pydantic[email]
+tenacity==6.1.0
+SQLAlchemy==1.4.21
+alembic==1.6.5
+aiofiles==0.7.0
+Jinja2==3.0.1
